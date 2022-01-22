@@ -1,4 +1,4 @@
-package jp.kaleidot725.koinnavigationcompose.ui.navhost
+package jp.kaleidot725.koinnavigationcompose.ui.sample
 
 import android.app.Activity
 import androidx.compose.runtime.Composable
@@ -10,7 +10,7 @@ import jp.kaleidot725.koinnavigationcompose.ui.screen.SubScreen
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 @Composable
-fun NavHostRelatedActivity(activity: Activity) {
+fun ViewModelFollowsActivityLifecycle(activity: Activity) {
     val navController = rememberNavController()
     NavHost(navController, startDestination = "main") {
         composable("main") {

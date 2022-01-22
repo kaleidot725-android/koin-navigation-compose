@@ -1,4 +1,4 @@
-package jp.kaleidot725.koinnavigationcompose.ui.navhost
+package jp.kaleidot725.koinnavigationcompose.ui.sample
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalSavedStateRegistryOwner
@@ -33,7 +33,7 @@ inline fun <reified T : ViewModel> getComposeViewModel(
 }
 
 @Composable
-fun NavHostRelatedBackStackEntry() {
+fun ViewModelFollowsNavBackStackEntryLifecycle() {
     val navController = rememberNavController()
     NavHost(navController, startDestination = "main") {
         composable("main") {

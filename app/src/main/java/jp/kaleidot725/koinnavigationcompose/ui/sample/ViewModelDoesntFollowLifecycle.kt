@@ -1,4 +1,4 @@
-package jp.kaleidot725.koinnavigationcompose.ui.navhost
+package jp.kaleidot725.koinnavigationcompose.ui.sample
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
@@ -10,7 +10,7 @@ import jp.kaleidot725.koinnavigationcompose.ui.screen.SubScreen
 import jp.kaleidot725.koinnavigationcompose.ui.screen.SubViewModel
 
 @Composable
-fun NavHostRelatedNone() {
+fun ViewModelDoesntFollowLifecycle() {
     val navController = rememberNavController()
     NavHost(navController, startDestination = "main") {
         composable("main") {
